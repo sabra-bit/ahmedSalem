@@ -305,7 +305,7 @@ display: inline-block;
 
             <% for (let item of Data) { %>
           <div class="card">
-            <img class="zoom-on-hover" src='http://127.0.0.1:3000/download/<%= item['id'] %>' alt="Card Image 1">
+            <img class="zoom-on-hover" src='/download/<%= item['id'] %>' alt="Card Image 1">
             <h3><i class="fa fa-map-marker"></i> <%= item['Location'] %></h3>
             <p><%= item['Description'] %></p>
             <div>   <p class="text-with-border"><%= item['price'] %> <i class="fa fa-dollar"></i></p>  <p class="text-with-border">  <%= item['size'] %> m&sup2;  </p> <p class="text-with-border"><%= item['room'] %> <i class="fa fa-bed"></i> </p><p class="text-with-border"><%= item['name'] %> <i class="fa fa-phone"></i> <%= item['phone'] %>  </p> </div>
